@@ -1,0 +1,86 @@
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  width: 1860px;
+
+
+}
+
+nav {
+  background-image: url("fundal3.png");
+  background-size: 720px;
+  background-position: center;
+  padding: 25px;
+  margin: 10px 10px 20px 10px;
+  background-repeat: no-repeat;
+}
+
+
+nav li {
+  display: inline-block;
+  padding:  10px 10px;
+  margin: 150px 20px 0px 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px #000; 
+}
+
+nav li a {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+
+
+nav li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+nav li a:hover::before {
+  width: 100%;
+}
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 0;
+ 
+  
+}
+iframe {
+  width: 1920px;
+  height: 1080px;
+ 
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  width: 1882px;
+  background-image: url("masina-removebg-preview.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  
+}
+

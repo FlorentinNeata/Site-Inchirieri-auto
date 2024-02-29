@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inchirieri auto</title>
+	<link rel="stylesheet" type="text/css" href="stil.css">
+	<script>
+		function afiseazaContinut(pagina) {
+			var continut = document.getElementById("continut");
+			if (pagina === "") {
+				continut.innerHTML = '<h4>   Bine v-am găsit la Florita SRL, agentia dumneavoastra de inchirieri auto.</h4><h4>   Dispunem de numeroase modele de masini disponibile la orice ora din zi, pe orice interval de timp,</h4><h4>   atat cat va tine buzunarul.</h4>';
+			} else {
+				continut.innerHTML = '<iframe src="' + pagina + '"></iframe>';
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<header>
+        <h1>Bine ați venit!</h1>
+        <h3>Vă rugăm să selectați una din opțiunile de mai jos:</h3>
+		<nav>
+			<ul>
+				<li><a href="#" onclick="afiseazaContinut('')">Pagina principala</a></li>
+				<li><a href="#" onclick="afiseazaContinut('pagina3.html')">Vezi masini disponibile</a></li>
+				<li><a href="#" onclick="afiseazaContinut('pagina1.html')">Specificatii si pret</a></li>
+				
+				<li><a href="#" onclick="afiseazaContinut('pagina4.html')">Termeni si conditii</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div id="continut">
+			<h4>   Bine v-am găsit la Florita SRL, agentia dumneavoastra de inchirieri auto.</h4>
+			<h4>Dispunem de numeroase modele de masini disponibile la orice ora din zi, pe orice interval de timp,</h4>
+			<h4>atat cat va tine buzunarul.</h4>
+		</div>
+	</main>
+	<footer>
+		<p>Drepturi de autor © 2023 Neata Florentin Cristian.</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$('nav li').click(function() {
+		  $('nav li').removeClass('active');
+		  $(this).addClass('active');
+	  
+		  var index = $(this).index();
+		  $('footer').css('background-position', index * 30 + '%');
+		});
+	  </script>
+</body>
+</html>
+

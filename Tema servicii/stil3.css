@@ -1,0 +1,41 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 20%;
+    padding: 0px 0px 20px 0px;
+    box-sizing: border-box;
+    margin: 0 0px 90px 0px;
+    height: 400px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    height: 300px;
+    
+}
+.item img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    height: 300px;
+    transition: transform 0.15s ease-in-out; 
+  }
+  
+  .item:hover img {
+    transform: scale(1.2); 
+  }
+  
+body{
+background-image: url("fundal6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item a {
+    color: red;
+    text-decoration: none; 
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact</title>
+	<link rel="stylesheet" type="text/css" href="stilpag2.css">
+</head>
+<body>
+	<header>
+		<h2>Contactati-ne folosind informatiile de mai jos:</h2>
+	</header>
+	<table id="tabel-clienti">
+		<tr>
+			<td><h3>Nume</h3></td>
+			<td><h3>Prenume</h3></td>
+			<td><h3>Telefon</h3></td>
+			<td><h3>Email</h3></td>
+		</tr>
+		<tr>
+			<td><h>Neata</h></td>
+			<td><h>Florentin</h></td>
+			<td><h>0755435534</h></td>
+			<td><h>Floritasmecherul@yahoo.com</h></td>
+		</tr>
+		<tr>
+			<td><h>Staicu</h></td>
+			<td><h>Marius</h></td>
+			<td><h>0757645534</h></td>
+			<td><h>Staicunulafeldesmecher@gmail.com</h></td>
+		</tr>
+		<tr>
+			<td><h>Beldea</h></td>
+			<td><h>Marius</h></td>
+			<td><h>0755475380</h></td>
+			<td><h>Casaveziemail@yahoo.com</h></td>
+		</tr>
+	</table>
+	<form>
+		<label>
+			<h1>Lăsați-ne un mesaj:</h1>
+			<input type="text" id="mesaj" name="mesaj" value="">
+		</label>
+		<button type="button" onclick="resetareMesaj()">Trimite</button>
+	</form>
+	<script>
+		function resetareMesaj() {
+    document.getElementById("mesaj").value = "";
+    document.querySelector('button[type="button"]').innerHTML = "TRIMIS!";
+}
+	</script>
+	
+</body>
+<img src="fundal5.png">
+
+</html>
+
+
+
+
+
+
+
+
