@@ -13,18 +13,18 @@ Funcționalități principale:
     "M-am decis!"
   
   Navigare între pagini:
-    *"Pagina principală" este pagina de pornire, cu un text și o interfață grafică simplă.
+  *"Pagina principală" este pagina de pornire, cu un text și o interfață grafică simplă.
     Pe măsură ce utilizatorul alege alte pagini, conținutul se schimbă, dar antetul și subsolul rămân constante.
     
-    *Pagina "Vezi mașini disponibile":
+  *Pagina "Vezi mașini disponibile":
     Afișează 10 mașini disponibile, fiecare cu o imagine.
     La click pe imagine, utilizatorul este redirecționat către un videoclip de prezentare pe YouTube pentru mașina respectivă.
     
-    *Paginile "Specificații și preț" și "Termeni și condiții":
+  *Paginile "Specificații și preț" și "Termeni și condiții":
     Pagini de informații cu text și fundal corespunzător.
     Pagina "Specificații și preț" include un buton care duce către pagina "M-am decis".
     
-    *Pagina "M-am decis!":
+  *Pagina "M-am decis!":
     Oferă informații de contact și opțiunea de a lăsa un mesaj.
     
   Tehnologii utilizate:
